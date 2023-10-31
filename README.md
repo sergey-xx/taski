@@ -10,11 +10,16 @@
 ## Как запустить проект в тестовом режиме.
 - Клонировать проект на жесткий диск.
 ### Backend
+(Windows)
 - В папке /backend создать виртуальное окружение: $ python -m venv venv
 - Активировать виртуальное окружение: $ source venv/Scripts/Activate
+(Linux)
+- В папке /backend создать виртуальное окружение: $ python3 -m venv venv
+- Активировать виртуальное окружение: $ source source venv/bin/activate
+Далее
 - Установить зависимости: $ pip install -r requirements.py
-- Выполнирть миграции БД: $ python manage.py migrate
-- Для доступа в админ-панель ссоздайте супер-пользователя: $ python manage.py createsuperuser
+- Выполнить миграции БД: $ python manage.py migrate
+- Для доступа в админ-панель создайте супер-пользователя: $ python manage.py createsuperuser
 - Запустить проект: $ python manage.py runserver
   Админ-панель будет доступен по адресу: http://127.0.0.1:8000/admin/
   API будет доступно по адресу: http://127.0.0.1:8000/api/
